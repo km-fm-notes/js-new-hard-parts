@@ -1,0 +1,1 @@
+Repo contains code from Sentance JS Course on Frontend masters <https://frontendmasters.com/courses/javascript-new-hard-parts/>
