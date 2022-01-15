@@ -1,0 +1,23 @@
+{
+  "name": "js-new-hard-parts",
+  "version": "1.0.0",
+  "description": "Repo contains code from Sentance JS Course on Frontend masters <https://frontendmasters.com/courses/javascript-new-hard-parts/>",
+  "main": "quick.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kamarmack/js-new-hard-parts.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kamarmack/js-new-hard-parts/issues"
+  },
+  "homepage": "https://github.com/kamarmack/js-new-hard-parts#readme",
+  "devDependencies": {
+    "jest": "^27.4.7"
+  }
+}
