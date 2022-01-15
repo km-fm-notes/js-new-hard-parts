@@ -1,4 +1,6 @@
-promise = new Promise(function(resolve, reject) {
+'use strict';
+
+const promise = new Promise(function(resolve, reject) {
   reject();
 })
 function displayRejected() {

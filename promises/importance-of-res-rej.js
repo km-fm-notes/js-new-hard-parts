@@ -1,3 +1,5 @@
+'use strict';
+
 function logMe(value) {
   console.log(value);
 }

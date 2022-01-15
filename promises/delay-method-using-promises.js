@@ -1,5 +1,7 @@
+'use strict';
+
 function sayHello() {
-  console.log('Hello');
+  console.log('Hello me after 1sec');
 }
 function delay(ms) {
 	return new Promise(function (resolve) {

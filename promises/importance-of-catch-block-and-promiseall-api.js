@@ -1,3 +1,5 @@
+'use strict';
+
 const fakePeople = [
   { name: 'Rudolph', hasPets: false, currentTemp: 98.6 },
   { name: 'Zebulon', hasPets: true, currentTemp: 22.6 },
@@ -32,9 +34,9 @@ function getAllDataErr() {
 		});
 }
 
-getAllData().then((values) => console.log('getAllData() then', values));
+getAllData().then((values) => console.log('getAllData() then me second', values));
 getAllDataErr().then((values) => console.log('getAllDataErr() then', values))
-  .catch(e => console.log('getAllDataErr() catch', e));
+  .catch(e => console.log('getAllDataErr() catch me first', e));
 // Program throws exception without catch block under getAllDataErr()
 
 ` Prints

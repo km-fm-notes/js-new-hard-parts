@@ -1,11 +1,11 @@
-// Challenge 1
+'use strict';
 
 function sayHello() {
 	function printHello() {
-    console.log('Challenge 1, 5', 'Hello'); // prints 2nd, regardless of setTimeout time value
+    console.log('Hello me second');
   }
   setTimeout(printHello, 0);
 }
 
 sayHello();
-console.log('me first'); // 1st
+console.log('me first');
