@@ -1,4 +1,3 @@
-// Challenge 7
 const fakePeople = [
   { name: 'Rudolph', hasPets: false, currentTemp: 98.6 },
   { name: 'Zebulon', hasPets: true, currentTemp: 22.6 },
@@ -17,7 +16,6 @@ const fakeAPICall = (i) => {
 };
 
 function getAllData() {
-  // CODE GOES HERE
   const apiPromises = [fakeAPICall(0), fakeAPICall(1), fakeAPICall(2)]
   return Promise.all(apiPromises)
   	.then(function(values) {
@@ -25,26 +23,25 @@ function getAllData() {
 		});
 }
 
+// Bug here with fakeAPICall(10)
 function getAllDataErr() {
-  // CODE GOES HERE
   const apiPromises = [fakeAPICall(10), fakeAPICall(1), fakeAPICall(2)]
   return Promise.all(apiPromises)
   	.then(function(values) {
   		return values;
 		});
 }
-  
-getAllData().then((values) => console.log('Challenge 7', values));
-getAllDataErr().then((values) => console.log('Challenge 7', values))
-  .catch(e => console.log('Challenge 7', e));
+
+getAllData().then((values) => console.log('getAllData() then', values));
+getAllDataErr().then((values) => console.log('getAllDataErr() then', values))
+  .catch(e => console.log('getAllDataErr() catch', e));
+// Program throws exception without catch block under getAllDataErr()
 
 ` Prints
-Challenge 7 { message: 'index out of range' }
-Challenge 7 [
+getAllDataErr() catch { message: 'index out of range' }
+getAllData() then [
   { name: 'Rudolph', hasPets: false, currentTemp: 98.6 },
   { name: 'Zebulon', hasPets: true, currentTemp: 22.6 },
   { name: 'Harold', hasPets: true, currentTemp: 98.3 }
 ]
-
-Throws error without catch
 `
