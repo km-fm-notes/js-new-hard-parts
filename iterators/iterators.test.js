@@ -150,11 +150,11 @@ test('Symbol iterator exploration with functions and classes', () => {
 
 
 // Random:
-test.skip('validates a max heap', () => {
+test('validates a max heap', () => {
   const valid_max_heap = [10, 7, 9, 6, 5, 2, 8, 3, 4, 1];
   const valid_max_heap_with_dups = [10, 7, 10, 6, 5, 2, 8, 3, 4, 1];
   const invalid_max_heap = [10, 7, 9, 6, 5, 2, 8, 3, 4, 1, 11];
-  expect(validMaxHeap(valid_max_heap, true)).toBe(true);
+  expect(validMaxHeap(valid_max_heap)).toBe(true);
   expect(validMaxHeap(valid_max_heap_with_dups)).toBe(true);
   expect(validMaxHeap(invalid_max_heap)).toEqual({
     invalid_node: {

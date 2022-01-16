@@ -66,7 +66,7 @@ WordsFunc.prototype[Symbol.iterator] = function() {
     next: function () {
       const done = index > words.length - 1;
       if (done) {
-        return { done };
+        return { done, value: undefined };
       } else {
         const value = words[index++];
         return { value, done };
@@ -86,7 +86,7 @@ WordsClass.prototype[Symbol.iterator] = function() {
     next: function () {
       const done = index > words.length - 1;
       if (done) {
-        return { done };
+        return { done, value: undefined };
       } else {
         const value = words[index++];
         return { value, done };
@@ -107,7 +107,7 @@ MaxHeap.prototype[Symbol.iterator] = function() {
     next: function () {
       const done = index > heap.length - 1;
       if (done) {
-        return { done };
+        return { done, value: undefined };
       } else {
         const value = {
           value: heap[index],
